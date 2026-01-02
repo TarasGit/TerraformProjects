@@ -1,0 +1,36 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Azure Terraform VM">
+    <mxGraphModel dx="1000" dy="1000" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" value="Terraform Code&#xa;(main.tf, vars.tf)" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;fontStyle=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="120" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="3" value="Azure Cloud" style="swimlane;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;" vertex="1" parent="1">
+          <mxGeometry x="240" y="80" width="360" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="4" value="Resource Group" style="rounded=1;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="3">
+          <mxGeometry x="20" y="40" width="320" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="5" value="VNet / Subnet" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="4">
+          <mxGeometry x="20" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6" value="Azure VM" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Virtual_Machine.svg;sketch=1;" vertex="1" parent="4">
+          <mxGeometry x="220" y="80" width="60" height="56" as="geometry" />
+        </mxCell>
+        <mxCell id="7" value="NIC" style="rounded=0;whiteSpace=wrap;html=1;sketch=1;" vertex="1" parent="4">
+          <mxGeometry x="150" y="90" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;sketch=1;hatchSize=4;" edge="1" parent="1" source="2" target="3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="9" value="terraform apply" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="8">
+          <mxGeometry x="-0.1" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
