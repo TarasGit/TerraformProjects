@@ -1,0 +1,26 @@
+name: "Terraform Formating Action"
+
+on: 
+  push:
+    branches: [ "main" ]
+  pull_request:
+
+jobs:
+  check-syntax:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Terraform Setup
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Terraform Format Check
+        run: terraform fmt -check
+
+      # [TODO] Add this to k8s projects
+      #- name: Scan Kubernetes YAMLs
+      #  uses: stackrox/kube-linter-action@v1
+      #  with:
+      #    directory: ./k8s # Pfad zu deinen Kubernetes-Dateien
