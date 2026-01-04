@@ -37,3 +37,4 @@ resource "azurerm_subnet" "ubutnu-vm-subnet" {
 }
 
 
+
